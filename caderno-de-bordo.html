@@ -5,60 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Caderno de Bordo - Fronteiras Digitais</title>
   <style>
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background-color: #f4f4f9;
-      color: #333;
-      padding-bottom: 80px;
-    }
-    header {
-      background-color: #005f73;
-      color: #fff;
-      padding: 2rem;
-      text-align: center;
-    }
-    nav {
-      background-color: #333;
-      padding: 1rem;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    nav a {
-      color: #fff;
-      margin: 0 1rem;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    main {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    .log-entry {
-        margin-bottom: 2rem;
-        background-color: #fff;
-        padding: 1.5rem 2rem;
-        border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    }
-    h2 {
-        color: #005f73;
-        border-bottom: 2px solid #e0e0e0;
-        padding-bottom: 0.5rem;
-        margin-bottom: 1.5rem;
-    }
-    footer {
-      background-color: #222;
-      color: #fff;
-      text-align: center;
-      padding: 1rem;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #f4f4f9; color: #333; padding-bottom: 80px; }
+    header { background-color: #005f73; color: #fff; padding: 2rem; text-align: center; }
+    nav { background-color: #333; padding: 1rem; text-align: center; position: sticky; top: 0; z-index: 1000; }
+    nav a { color: #fff; margin: 0 1rem; text-decoration: none; font-weight: bold; }
+    main { max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
+    .log-entry-summary { margin-bottom: 2rem; background-color: #fff; padding: 1.5rem 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: box-shadow 0.3s; }
+    .log-entry-summary:hover { box-shadow: 0 6px 12px rgba(0,0,0,0.1); }
+    .log-entry-summary h2 { margin-top: 0; }
+    .log-entry-summary h2 a { text-decoration: none; color: #005f73; }
+    .log-entry-summary p.meta { font-size: 0.9em; color: #777; margin-bottom: 1rem; }
+    .read-more { display: inline-block; font-weight: bold; color: #005f73; text-decoration: none; }
+    .read-more:hover { text-decoration: underline; }
+    footer { background-color: #222; color: #fff; text-align: center; padding: 1rem; position: fixed; bottom: 0; width: 100%; }
   </style>
 </head>
 <body>
@@ -75,9 +34,11 @@
   </nav>
 
   <main>
-    <div class="log-entry">
-      <h2>Em breve...</h2>
-      <p>Esta seção documentará a jornada de criação e exploração de novas fronteiras digitais. O primeiro log, sobre o nascimento deste blog, está sendo preparado.</p>
+    <div class="log-entry-summary">
+      <h2><a href="caderno-01.html">Log #1: O Nascimento do Fronteiras Digitais</a></h2>
+      <p class="meta"><strong>Publicado em:</strong> 31 de julho de 2025</p>
+      <p>Tudo começou com uma reflexão sobre pioneirismo e como esse espírito se aplicava à nossa era digital. Esta é a história da interação que deu origem a este blog...</p>
+      <a href="caderno-01.html" class="read-more">Ler registro completo &rarr;</a>
     </div>
   </main>
 
